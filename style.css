@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    
+ 
+   
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6*10 = 16px */
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+h1,h2,p{
+
+    margin: 1.6rem 0;
+}
+h1{
+    font-size: 3.6rem;
+    font-weight: 800;
+
+
+}
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+   
+}
+p{
+    font-weight: 400;
+    font-size:  1.8rem;
+
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+/* *hero section */
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+.logo h1{
+    font-size: 3.2rem;
+    color:#4CAF50;
+    margin: 0;
+}
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+nav ul li a:hover{
+    color: #4CAF50;
+    transition: 0.5s ease-out;
+}
+
+.header-content{
+    width: 50%;
+    position: relative;
+    top:16%;
+    left: 8%;
+}
+form{
+    margin: 2.4rem 0;
+
+}
+input{
+    font-size: 1.8rem;
+}
+input[type="text"],input[type="email"]{
+    width:50%;
+    padding:12px 20px;
+    margin:1.2rem 0;
+    display:block;
+    border: 1px solid #ccc;
+}
+input[type="submit"]{
+
+    width: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+input::placeholder{
+    font-size: 1.6rem;
+    /* color: #2a2b38; */
+}
+
+.about-left,.about-middle, .about-right{
+    flex-basis: 30%;
+    color: black;
+}
+.btn{
+background-color: #4CAF50;
+color: #fff;
+padding: 8px 16px;
+margin: 2rem 0;
+display: inline-block;
+border:none;
+border-radius: 4px;
+cursor: pointer;
+text-transform: uppercase;
+
+}
+.about2{
+ background-color: #222;
+ margin: 0 20px;
+ border-radius: 5px; 
+
+  
+}
+.about2-left{
+    flex-basis: 50%;
+}
+.about2-right{
+    flex-basis: 50%;
+}
+.card-top,.card-bottom{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 5px;
+    
+}
+.about2 .card{
+    background-color: #fff;
+    color: #333;
+    padding: 1.5rem 1.8rem;
+    margin: 1.8rem 1.3rem;
+    border-radius: 10px;
+}
+.card img{
+    height: 80px;
+    width: 100px;
+
+}
+/* process section */
+.process .row{
+    justify-content: center;
+    color: black;
+}
+.process-content{
+    margin-top: 100px;
+}
+.process-bar{
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin:auto;
+    position: relative;
+
+}
+.process-bar .c1,.process-bar .c2,.process-bar .c3
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+}
+.process-bar .c1{
+    top:-8px;
+    left: 50px;
+}
+.process-bar .c2{
+    top:-8px;
+    left: 50%
+}
+.process-bar .c3{
+    top:-8px;
+    right: 50px;
+}
+.box,.box2,.box3{
+padding: 1.8rem;
+}
+.process .box2{
+    text-align: center;
+}
+.process .box3{
+    text-align: right;
+}
+.process h2{
+    color: #4CAF50;
+}
+/*testimony*/
+.testimony{
+    background-color: rgb(12, 9, 9);
+    color: whitesmoke;
+}
+.testimony .test{
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin:0 1rem ;
+    border-radius: 10px;
+}
+.testimony .image{
+    height: 100px;
+    width: 80px;
+}
+.testimony img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.contact{
+    color: #222;
+}
+contact .row{
+justify-content: center;
+}
+.contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input{
+    width: 50%;
+    padding: 15px 10px;
+}
+.contact form textarea{
+    width: 50%;
+    height: 100px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    resize: none;
+    color: rgb(22, 16, 16);
+    margin: 1.2rem 0;
+    font-family: sans-serif;
+}
+footer{
+    color:#fff;
+    background-color: #505050;
+    text-align: center;
+    height: 80px;
+    line-height: 80px; /*equal to height to center vertically  */ 
+
+}
+nav span{
+   display: none; /* not display  for desktop screen*/ 
+
+}
+@media  only screen and (max-width:760px){
+    .row{
+        flex-direction: column;
+    }
+    nav{
+      flex-direction: column;
+      position: relative;
+    }
+    nav{
+        position: relative;
+    }
+    nav span{
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: rgb(241, 238, 241);
+        margin-top: 18px;
+        position: absolute;
+        top:20px;
+        right: 10px;
+        cursor: pointer;
+     
+     
+     } 
+     .line2{
+        top:10px;
+    }
+    .line3{
+        top:15px;
+    }
+    nav ul{
+        display: none;
+        background-color: whitesmoke;
+    }
+    .showmenu{
+        display: block;
+    }
+     nav ul li{
+        display: block;
+         padding: 2% 0;
+
+     }
+ nav ul li a{
+     color:#4CAF50;
+ }
+ .header-content{
+     width: 100%;
+     text-align: center;
+    
+ }
+ input[type="text"], input[type="email"], input[type="submit"]{
+     width: 80%;
+     margin: 1.2rem auto;
+ }
+    
+ .process-bar{
+     display: none;
+
+ }
+ .process-content{
+     margin-top: 20px;
+ }
+ .process .box1,.process .box2, .process .box3{
+     text-align: center;
+ }
+ .contact form{
+     width: 100%;
+ }
+}
